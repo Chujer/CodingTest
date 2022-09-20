@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Basic\EvenAndOddNumber.cpp" />
+    <ClCompile Include="Basic\Average.cpp" />
+    <ClCompile Include="Basic\divisor.cpp" />
+    <ClCompile Include="Basic\Sqrt.cpp" />
+    <ClCompile Include="Basic\AddNaturalNumbers.cpp" />
+    <ClCompile Include="Basic\FlipNatualNumbers.cpp" />
+    <ClCompile Include="Basic\NumberOfString.cpp" />
+    <ClCompile Include="Basic\HarshadNumber.cpp" />
+    <ClCompile Include="Basic\IntegerDescending.cpp" />
+    <ClCompile Include="Basic\StringToInt.cpp" />
+    <ClCompile Include="Hash\Marathon.cpp" />
+    <ClCompile Include="Hash\Pokemon.cpp" />
+    <ClCompile Include="Hash\PhoneBook.cpp" />
+  </ItemGroup>
+</Project>
