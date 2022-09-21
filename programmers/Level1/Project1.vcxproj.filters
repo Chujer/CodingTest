@@ -11,8 +11,8 @@
     <ClCompile Include="Basic\HarshadNumber.cpp" />
     <ClCompile Include="Basic\IntegerDescending.cpp" />
     <ClCompile Include="Basic\StringToInt.cpp" />
-    <ClCompile Include="Hash\Marathon.cpp" />
-    <ClCompile Include="Hash\Pokemon.cpp" />
-    <ClCompile Include="Hash\PhoneBook.cpp" />
+    <ClCompile Include="Basic\NumberSpace.cpp" />
+    <ClCompile Include="Basic\Remainder_Is1.cpp" />
+    <ClCompile Include="Basic\CollatzGuess.cpp" />
   </ItemGroup>
 </Project>
