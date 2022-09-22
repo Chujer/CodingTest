@@ -13,6 +13,8 @@
     <ClCompile Include="Basic\StringToInt.cpp" />
     <ClCompile Include="Basic\NumberSpace.cpp" />
     <ClCompile Include="Basic\Remainder_Is1.cpp" />
-    <ClCompile Include="Basic\CollatzGuess.cpp" />
+    <ClCompile Include="SumBetweenIntegers.cpp" />
+    <ClCompile Include="FindKimSeobang.cpp" />
+    <ClCompile Include="HidePhonNumber.cpp" />
   </ItemGroup>
 </Project>
