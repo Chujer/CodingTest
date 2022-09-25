@@ -139,6 +139,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="2016.cpp" />
+    <ClCompile Include="AddNoNum.cpp" />
+    <ClCompile Include="arrayDivision.cpp" />
     <ClCompile Include="Basic\AddNaturalNumbers.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
@@ -186,8 +189,12 @@
     <ClCompile Include="Basic\NumberSpace.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="FindKimSeobang.cpp" />
-    <ClCompile Include="HidePhonNumber.cpp" />
+    <ClCompile Include="CenterLetter.cpp" />
+    <ClCompile Include="DeleteMin.cpp" />
+    <ClCompile Include="DotProduct.cpp" />
+    <ClCompile Include="numEditerAdd.cpp" />
+    <ClCompile Include="SelectTwoAdd.cpp" />
+    <ClCompile Include="Soobak.cpp" />
     <ClCompile Include="SumBetweenIntegers.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>

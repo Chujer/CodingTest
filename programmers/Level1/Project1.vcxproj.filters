@@ -14,7 +14,14 @@
     <ClCompile Include="Basic\NumberSpace.cpp" />
     <ClCompile Include="Basic\Remainder_Is1.cpp" />
     <ClCompile Include="SumBetweenIntegers.cpp" />
-    <ClCompile Include="FindKimSeobang.cpp" />
-    <ClCompile Include="HidePhonNumber.cpp" />
+    <ClCompile Include="arrayDivision.cpp" />
+    <ClCompile Include="DeleteMin.cpp" />
+    <ClCompile Include="numEditerAdd.cpp" />
+    <ClCompile Include="Soobak.cpp" />
+    <ClCompile Include="SelectTwoAdd.cpp" />
+    <ClCompile Include="2016.cpp" />
+    <ClCompile Include="CenterLetter.cpp" />
+    <ClCompile Include="AddNoNum.cpp" />
+    <ClCompile Include="DotProduct.cpp" />
   </ItemGroup>
 </Project>
