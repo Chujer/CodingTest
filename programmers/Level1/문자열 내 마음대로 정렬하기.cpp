@@ -43,11 +43,3 @@ vector<string> solution(vector<string> strings, int n) {
         return strings;
     }
 */
-
-int main()
-{
-    vector<string> a = { "car", "bed", "sun" };
-    solution(a,2);
-
-    return 0;
-}

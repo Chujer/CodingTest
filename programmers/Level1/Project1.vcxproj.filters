@@ -40,5 +40,9 @@
     <ClCompile Include="비밀지도.cpp" />
     <ClCompile Include="최소직사각형.cpp" />
     <ClCompile Include="문자열 내 마음대로 정렬하기.cpp" />
+    <ClCompile Include="k번째수.cpp" />
+    <ClCompile Include="숫자 문자열과 영단어.cpp" />
+    <ClCompile Include="소수 찾기.cpp" />
+    <ClCompile Include="모의고사.cpp" />
   </ItemGroup>
 </Project>

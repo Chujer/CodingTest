@@ -216,6 +216,7 @@
     <ClCompile Include="HidePhonNumber.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="k번째수.cpp" />
     <ClCompile Include="numEditerAdd.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -234,11 +235,14 @@
     <ClCompile Include="SumBetweenIntegers.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="모의고사.cpp" />
     <ClCompile Include="문자열 내 마음대로 정렬하기.cpp" />
     <ClCompile Include="부족한금액계산하기.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="비밀지도.cpp" />
+    <ClCompile Include="소수 찾기.cpp" />
+    <ClCompile Include="숫자 문자열과 영단어.cpp" />
     <ClCompile Include="시저암호.cpp" />
     <ClCompile Include="약수의 개수와 덧셈.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
