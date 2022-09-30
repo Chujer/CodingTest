@@ -44,5 +44,8 @@
     <ClCompile Include="숫자 문자열과 영단어.cpp" />
     <ClCompile Include="소수 찾기.cpp" />
     <ClCompile Include="모의고사.cpp" />
+    <ClCompile Include="소수만들기.cpp" />
+    <ClCompile Include="실패율.cpp" />
+    <ClCompile Include="다트게임.cpp" />
   </ItemGroup>
 </Project>
