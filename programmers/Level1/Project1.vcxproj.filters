@@ -47,5 +47,8 @@
     <ClCompile Include="소수만들기.cpp" />
     <ClCompile Include="실패율.cpp" />
     <ClCompile Include="다트게임.cpp" />
+    <ClCompile Include="키패드 누르기.cpp" />
+    <ClCompile Include="크레인 인형뽑기 게임.cpp" />
+    <ClCompile Include="신규 아이디 추천.cpp" />
   </ItemGroup>
 </Project>
