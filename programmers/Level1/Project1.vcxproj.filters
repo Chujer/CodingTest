@@ -50,5 +50,7 @@
     <ClCompile Include="키패드 누르기.cpp" />
     <ClCompile Include="크레인 인형뽑기 게임.cpp" />
     <ClCompile Include="신규 아이디 추천.cpp" />
+    <ClCompile Include="성격 유형 검사하기.cpp" />
+    <ClCompile Include="신고결과 받기.cpp" />
   </ItemGroup>
 </Project>
