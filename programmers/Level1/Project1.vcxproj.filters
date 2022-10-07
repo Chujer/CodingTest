@@ -52,5 +52,9 @@
     <ClCompile Include="신규 아이디 추천.cpp" />
     <ClCompile Include="성격 유형 검사하기.cpp" />
     <ClCompile Include="신고결과 받기.cpp" />
+    <ClCompile Include="숫자 짝꿍.cpp" />
+    <ClCompile Include="스킬체크테스트\test1.cpp" />
+    <ClCompile Include="스킬체크테스트\test2.cpp" />
+    <ClCompile Include="스킬체크테스트\test3.cpp" />
   </ItemGroup>
 </Project>
