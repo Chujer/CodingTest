@@ -3,5 +3,14 @@
   <ItemGroup>
     <ClCompile Include="최댓값과 최솟값.cpp" />
     <ClCompile Include="JadenCase문자열 만들기.cpp" />
+    <ClCompile Include="최솟값 만들기.cpp" />
+    <ClCompile Include="이진 변환 반복하기.cpp" />
+    <ClCompile Include="올바른 괄호.cpp" />
+    <ClCompile Include="숫자의 표현.cpp" />
+    <ClCompile Include="피보나치 수.cpp" />
+    <ClCompile Include="다음 큰 숫자.cpp" />
+    <ClCompile Include="카펫.cpp" />
+    <ClCompile Include="영어 끝말잇기.cpp" />
+    <ClCompile Include="짝지어 제거하기.cpp" />
   </ItemGroup>
 </Project>
