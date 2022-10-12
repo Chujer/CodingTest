@@ -12,5 +12,6 @@
     <ClCompile Include="카펫.cpp" />
     <ClCompile Include="영어 끝말잇기.cpp" />
     <ClCompile Include="짝지어 제거하기.cpp" />
+    <ClCompile Include="구명보트.cpp" />
   </ItemGroup>
 </Project>
