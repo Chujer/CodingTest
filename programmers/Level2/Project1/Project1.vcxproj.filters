@@ -13,5 +13,6 @@
     <ClCompile Include="영어 끝말잇기.cpp" />
     <ClCompile Include="짝지어 제거하기.cpp" />
     <ClCompile Include="구명보트.cpp" />
+    <ClCompile Include="N개의 최소공배수.cpp" />
   </ItemGroup>
 </Project>
