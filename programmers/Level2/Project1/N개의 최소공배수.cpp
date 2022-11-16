@@ -1,20 +1,27 @@
-#include <stdio.h>
-#include <stdbool.h>
-#include <stdlib.h>
+#include <string>
+#include <vector>
 
-// arr_len은 배열 arr의 길이입니다.
-int solution(int arr[], size_t arr_len) {
+using namespace std;
+
+int solution(vector<int> arr) {
     int answer = arr[0];
 
-    for (int i = 1; i < arr_len; i++)
+    for (int i = 1; i < arr.size(); i++)
     {
-        int temp = 1;
+
+        if (answer >= arr[i] && answer % arr[i] == 0)
+            continue;
+
+        int temp = 2;
         while (true)
         {
-
+            if (answer * temp >= arr[i] && (answer * temp) % arr[i] == 0)
+            {
+                answer = answer * temp;
+                break;
+            }
+            temp++;
         }
-
-        answer *= arr[i];
     }
 
     return answer;
@@ -22,7 +29,7 @@ int solution(int arr[], size_t arr_len) {
 
 int main()
 {
-    int arr[4] = { 2,6,8,14 };
-    solution(arr, 4);
+    solution({ 2,6,8,14 });
     return 0;
+
 }
