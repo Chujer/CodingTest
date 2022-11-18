@@ -58,5 +58,6 @@
     <ClCompile Include="스킬체크테스트\test3.cpp" />
     <ClCompile Include="햄버거 만들기.cpp" />
     <ClCompile Include="콜라문제.cpp" />
+    <ClCompile Include="기사단원의 무기.cpp" />
   </ItemGroup>
 </Project>
