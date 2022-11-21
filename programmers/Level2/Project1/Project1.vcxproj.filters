@@ -18,5 +18,8 @@
     <ClCompile Include="점프와 순간 이동.cpp" />
     <ClCompile Include="멀리 뛰기.cpp" />
     <ClCompile Include="캐시.cpp" />
+    <ClCompile Include="H-Index.cpp" />
+    <ClCompile Include="행렬의 곱셈.cpp" />
+    <ClCompile Include="괄호 히전하기.cpp" />
   </ItemGroup>
 </Project>
