@@ -21,5 +21,6 @@
     <ClCompile Include="H-Index.cpp" />
     <ClCompile Include="행렬의 곱셈.cpp" />
     <ClCompile Include="괄호 히전하기.cpp" />
+    <ClCompile Include="튜플.cpp" />
   </ItemGroup>
 </Project>
