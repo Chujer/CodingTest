@@ -1,0 +1,28 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+int main()
+{
+	int answer = 0;
+	string s;
+	int num[4];
+
+	vector<int> a;
+
+	cin >> num[0];
+
+	for (int i = 0; i < num[0]; i++)
+	{
+		cin >> num[1];
+		cin >> num[2];
+		a.push_back(num[1] + num[2]);
+	}
+	
+	for (int s : a)
+		cout << s << "\n";
+
+	return 0;
+}
