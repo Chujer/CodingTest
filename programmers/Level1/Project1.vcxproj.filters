@@ -59,5 +59,10 @@
     <ClCompile Include="햄버거 만들기.cpp" />
     <ClCompile Include="콜라문제.cpp" />
     <ClCompile Include="기사단원의 무기.cpp" />
+    <ClCompile Include="개인정보 수집 유효기간.cpp" />
+    <ClCompile Include="문자열 나누기.cpp" />
+    <ClCompile Include="명예의전당 (1).cpp" />
+    <ClCompile Include="가장 가까운 같은 글자.cpp" />
+    <ClCompile Include="크기가 작은 부분문자열.cpp" />
   </ItemGroup>
 </Project>
