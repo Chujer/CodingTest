@@ -22,6 +22,7 @@
     <ClCompile Include="행렬의 곱셈.cpp" />
     <ClCompile Include="괄호 히전하기.cpp" />
     <ClCompile Include="튜플.cpp" />
-    <ClCompile Include="위장.cpp" />
+    <ClCompile Include="위장-두고보자- 커엇!.cpp" />
+    <ClCompile Include="귤고르기.cpp" />
   </ItemGroup>
 </Project>

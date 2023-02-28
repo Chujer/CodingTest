@@ -15,49 +15,49 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="입출력과 사칙연산\알람 시계.cpp">
+    <ClCompile Include="입출력과 사칙연산, 반복문\알람 시계.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="입출력과 사칙연산\오븐 시계.cpp">
+    <ClCompile Include="입출력과 사칙연산, 반복문\오븐 시계.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="입출력과 사칙연산\주사위 세개 B4.cpp">
+    <ClCompile Include="입출력과 사칙연산, 반복문\주사위 세개 B4.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="입출력과 사칙연산\구구단 B5.cpp">
+    <ClCompile Include="입출력과 사칙연산, 반복문\구구단 B5.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="입출력과 사칙연산\A+B -3 B5.cpp">
+    <ClCompile Include="입출력과 사칙연산, 반복문\A+B -3 B5.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="입출력과 사칙연산\합 B5.cpp">
+    <ClCompile Include="입출력과 사칙연산, 반복문\합 B5.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="입출력과 사칙연산\영수증.cpp">
+    <ClCompile Include="입출력과 사칙연산, 반복문\영수증.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="입출력과 사칙연산\빠른 A+B.cpp">
+    <ClCompile Include="입출력과 사칙연산, 반복문\빠른 A+B.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="입출력과 사칙연산\A+B-7 B5.cpp">
+    <ClCompile Include="입출력과 사칙연산, 반복문\A+B-7 B5.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="입출력과 사칙연산\A+B-8 B5.cpp">
+    <ClCompile Include="입출력과 사칙연산, 반복문\A+B-8 B5.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="입출력과 사칙연산\별찍기1 B5.cpp">
+    <ClCompile Include="입출력과 사칙연산, 반복문\별찍기1 B5.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="입출력과 사칙연산\별찍기 2 B4.cpp">
+    <ClCompile Include="입출력과 사칙연산, 반복문\별찍기 2 B4.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="입출력과 사칙연산\A+B-5 B5.cpp">
+    <ClCompile Include="입출력과 사칙연산, 반복문\A+B-5 B5.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="입출력과 사칙연산\A+B-4 B5.cpp">
+    <ClCompile Include="입출력과 사칙연산, 반복문\A+B-4 B5.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="입출력과 사칙연산\더하기 사이클 B1.cpp">
+    <ClCompile Include="입출력과 사칙연산, 반복문\더하기 사이클 B1.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="1차원 배열\개수 세기 B5.cpp">
@@ -91,6 +91,18 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="함수\셀프 넘버 S5.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="입출력과 사칙연산, 반복문\꼬마정민.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="입출력과 사칙연산, 반복문\코딩은 체육과목 입니다.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1차원 배열\공 넣기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="심화\크로아티아 알파벳.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
