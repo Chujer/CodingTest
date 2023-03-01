@@ -24,5 +24,6 @@
     <ClCompile Include="튜플.cpp" />
     <ClCompile Include="위장-두고보자- 커엇!.cpp" />
     <ClCompile Include="귤고르기.cpp" />
+    <ClCompile Include="n^2배열 자르기.cpp" />
   </ItemGroup>
 </Project>
