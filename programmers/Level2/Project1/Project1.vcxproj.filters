@@ -26,5 +26,7 @@
     <ClCompile Include="귤고르기.cpp" />
     <ClCompile Include="n^2배열 자르기.cpp" />
     <ClCompile Include="기능개발.cpp" />
+    <ClCompile Include="연속 부분 수열 합의 개수.cpp" />
+    <ClCompile Include="프린터.cpp" />
   </ItemGroup>
 </Project>
