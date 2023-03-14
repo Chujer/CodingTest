@@ -27,12 +27,11 @@ int solution(vector<int> priorities, int location) {
 	            {
 	                if (location == 0)
 	                    location = data.size();
-	                else if (count > location)
-	                    location--;
 	                int temp = data.front();
 	                data.pop_front();
 	                data.push_back(temp);
-                    index = 0;
+                    index = 1;
+                    location--;
 	            }
 	        }
 	        else
@@ -43,41 +42,14 @@ int solution(vector<int> priorities, int location) {
         location--;
         answer++;
 
-        if (location == 0)
+        if (location < 0)
         {
             break;
         }
         count++;
-    }
-    
-   /* queue<int> data;
-    for (int p : priorities)
-    {
-        if (!data.empty() && p > data.front())
-        {
-            while (data.front() < p)
-            {
-                if (location == 0)
-                    location = data.size();
-                else if (count > location)
-                    location--;
-                int temp = data.front();
-                data.push(p);
-                data.pop();
-                data.push(temp);
-            }
-        }
-        else
-            data.push(p);
-        count++;
-    }
-    
-    answer = location;
-    */
+    }    
 
-    
-
-    return answer-1;
+    return answer;
 }
 
 int main()

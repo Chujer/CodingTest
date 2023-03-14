@@ -28,5 +28,8 @@
     <ClCompile Include="기능개발.cpp" />
     <ClCompile Include="연속 부분 수열 합의 개수.cpp" />
     <ClCompile Include="프린터.cpp" />
+    <ClCompile Include="뉴스 클러스터링.cpp" />
+    <ClCompile Include="소스.cpp" />
+    <ClCompile Include="타겟넘버 - 두고보자.cpp" />
   </ItemGroup>
 </Project>
