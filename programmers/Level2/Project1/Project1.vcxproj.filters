@@ -31,5 +31,6 @@
     <ClCompile Include="뉴스 클러스터링.cpp" />
     <ClCompile Include="소스.cpp" />
     <ClCompile Include="타겟넘버 - 두고보자 - 커엇 BFS.cpp" />
+    <ClCompile Include="피로도.cpp" />
   </ItemGroup>
 </Project>
