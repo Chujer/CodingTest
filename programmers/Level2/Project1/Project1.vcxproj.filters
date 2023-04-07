@@ -33,5 +33,6 @@
     <ClCompile Include="타겟넘버 - 두고보자 - 커엇 BFS.cpp" />
     <ClCompile Include="피로도.cpp" />
     <ClCompile Include="할인행사.cpp" />
+    <ClCompile Include="[3차]압축.cpp" />
   </ItemGroup>
 </Project>

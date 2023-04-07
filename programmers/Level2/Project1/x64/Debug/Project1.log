@@ -1,2 +1,5 @@
-﻿  할인행사.cpp
-  Project1.vcxproj -> C:\Users\Chujer\Desktop\GitHub\CodingTest\programmers\Level2\x64\Debug\Project1.exe
+﻿  [3차]압축.cpp
+C:\Users\Chujer\Desktop\GitHub\CodingTest\programmers\Level2\Project1\[3차]압축.cpp(13,15): error C2679: 이항 '[': 오른쪽 피연산자로 'char' 형식을 사용하는 연산자가 없거나 허용되는 변환이 없습니다.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\unordered_map(381,18): message : 'bool &std::unordered_map<std::string,bool,std::hash<std::string>,std::equal_to<std::string>,std::allocator<std::pair<const std::string,bool>>>::operator [](const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &)'일 수 있습니다.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\unordered_map(208,18): message : 또는       'bool &std::unordered_map<std::string,bool,std::hash<std::string>,std::equal_to<std::string>,std::allocator<std::pair<const std::string,bool>>>::operator [](std::basic_string<char,std::char_traits<char>,std::allocator<char>> &&)'
+C:\Users\Chujer\Desktop\GitHub\CodingTest\programmers\Level2\Project1\[3차]압축.cpp(13,15): message : 인수 목록 '(std::unordered_map<std::string,bool,std::hash<std::string>,std::equal_to<std::string>,std::allocator<std::pair<const std::string,bool>>>, char)'을(를) 일치시키는 동안
