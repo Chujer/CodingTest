@@ -37,5 +37,6 @@
     <ClCompile Include="k진수에서 소수 개수 구하기.cpp" />
     <ClCompile Include="[3차] n진수 게임.cpp" />
     <ClCompile Include="더 맵게.cpp" />
+    <ClCompile Include="주차 요금 계산.cpp" />
   </ItemGroup>
 </Project>
