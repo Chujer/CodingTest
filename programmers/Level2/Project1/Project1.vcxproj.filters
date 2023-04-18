@@ -38,5 +38,8 @@
     <ClCompile Include="[3차] n진수 게임.cpp" />
     <ClCompile Include="더 맵게.cpp" />
     <ClCompile Include="주차 요금 계산.cpp" />
+    <ClCompile Include="오픈채팅방.cpp" />
+    <ClCompile Include="주식가격.cpp" />
+    <ClCompile Include="땅따먹기.cpp" />
   </ItemGroup>
 </Project>
