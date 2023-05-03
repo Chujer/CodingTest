@@ -1,39 +1,23 @@
 #include <iostream>
 #include <vector>
-#include <stack>
 using namespace std;
+//문제오류 위에서 아래로 간다면서 아래에서 위로가는것도 만들어야함
 
-void Check(vector<vector<int>> land, int depth, int point, int maxPoint)
-{
-
-}
 
 int solution(vector<vector<int> > land)
 {
     int answer = 0;
-
-    stack<int> landPoint;
-
-    for (int i = 0; i < land.size(); i++)
-    {
-        int maxCount = 0;
-        int index = 0;
-        for (int j = 0; j < land[i].size(); j++)
-        {
-            if (land[i][j] > maxCount && (landPoint.empty() || j != landPoint.top()))
-            {
-                maxCount = land[i][j];
-                index = j;
-            }
-        }
-        landPoint.push(index);
-        cout << landPoint.top();
-        answer += maxCount;
+    for (int i = 0; i < land.size() - 1; i++) {
+        land[i + 1][0] += max(land[i][1], max(land[i][2], land[i][3]));
+        land[i + 1][1] += max(land[i][0], max(land[i][2], land[i][3]));
+        land[i + 1][2] += max(land[i][0], max(land[i][1], land[i][3]));
+        land[i + 1][3] += max(land[i][0], max(land[i][1], land[i][2]));
     }
+    answer = max(land[land.size() - 1][0], max(land[land.size() - 1][1], max(land[land.size() - 1][2], land[land.size() - 1][3])));
     return answer;
 }
 
 int main()
 {
-    solution({ { 5,3,2,1}, { 5,6,7,8 }, { 4,3,2,1 },{ 3,4,2,1 },{ 4,3,2,5 } ,{ 4,3,2,1 } });
+    solution({ {1,2,3,5}, {5,6,7,8}, {4,3,2,1}});
 }
