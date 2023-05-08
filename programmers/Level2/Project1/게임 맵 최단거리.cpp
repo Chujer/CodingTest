@@ -1,97 +1,55 @@
 #include<vector>
-#include <unordered_map>
 #include <map>
 using namespace std;
 
-struct Pos
+void DFS(vector<vector<int>> maps, map<vector<int>, bool> prevPos, int nextX, int nextY, int& bestCount, int count)
 {
-    int x = 0;
-    int y = 0;
 
-    /*bool operator!=(Pos& pos)
+    if (count >= bestCount)
+        return;
+    vector<int> temp;
+    temp.push_back(nextX);
+    temp.push_back(nextY);
+
+    prevPos.insert(make_pair(temp, true));
+
+    if (nextX == maps.size()-1 && nextY == maps[0].size()-1 && bestCount > count)
     {
-        return (pos.x != x && pos.y != y);
+        bestCount = count;
     }
-    bool operator==(Pos& pos)
-    {
-        return (pos.x == x && pos.y == y);
-    }*/
-};
+
+    if(prevPos.find({nextX+1, nextY}) == prevPos.end() && nextX + 1 < maps.size() && maps[nextX + 1][nextY] == 1)
+        DFS(maps, prevPos, nextX + 1, nextY, bestCount, count+1);
+
+    if (prevPos.find({nextX - 1, nextY }) == prevPos.end() && nextX  != 0 && maps[nextX - 1][nextY] == 1)
+        DFS(maps, prevPos, nextX - 1, nextY, bestCount, count+1);
+
+    if (prevPos.find({ nextX, nextY + 1 }) == prevPos.end() && nextY + 1 < maps[0].size() && maps[nextX][nextY + 1] == 1)
+        DFS(maps, prevPos, nextX, nextY + 1, bestCount, count+1);
+
+    if (prevPos.find({ nextX, nextY - 1 }) == prevPos.end() && nextY != 0 && maps[nextX][nextY-1] == 1)
+        DFS(maps, prevPos, nextX, nextY - 1, bestCount, count+1);
+}
 
 int solution(vector<vector<int> > maps)
 {
-    int answer = 0;
+    int answer = maps.size() * maps[0].size();
 
-    struct Pos position = {0,0};
-    Pos StartPos = {0,0};
-   // Pos EndPos = { maps[maps.size()].size(), maps.size()};
-    
-    map<Pos,bool> slot;
+    int x = 0;
+    int y = 0;
 
-    slot.insert(make_pair(position, true));
-    //while (position.x != EndPos.x)
-    //{
-    //    if (position.x == EndPos.x)
-    //        return answer;
+    map<vector<int>, bool> prevPos;
+    int count = 1;
+    DFS(maps, prevPos, x, y, answer, count);
 
-    //    if (position.x < maps[maps.size()].size() && maps[position.y][position.x+1] == 1)
-    //    {
-    //        Pos temp = position;
-    //        temp.x += 1;
-    //        if (slot.find(temp) == slot.end())
-    //        {
-    //            position.x += 1;
-    //            //slot.insert(make_pair(position, true));
-    //            answer++;
-    //            continue;
-    //        }
-    //    }
-    //    if (position.x > 0 && maps[position.y][position.x - 1] == 1)
-    //    {
-    //        Pos temp = position;
-    //        temp.x -= 1;
-    //        if (slot.find(temp) == slot.end())
-    //        {
-    //            position.x -= 1;
-    //            //slot.insert(make_pair(position, true));
-    //            answer++;
-    //            continue;
-    //        }
-    //    }
-    //    if (position.y < maps.size() && maps[position.y + 1][position.x] == 1)
-    //    {
-    //        Pos temp = position;
-    //        temp.y += 1;
-    //        if (slot.find(temp) == slot.end())
-    //        {
-    //            position.y += 1;
-    //          //  slot.insert(make_pair(position, true));
-    //            answer++;
-    //            continue;
-    //        }
-    //    }
-    //    if (position.y > 0 && maps[position.y - 1][position.x] == 1)
-    //    {
-    //        Pos temp = position;
-    //        temp.x -= 1;
-    //        if (slot.find(temp) == slot.end())
-    //        {
-    //            position.y -= 1;
-    //           // slot.insert(make_pair(position, true));
-    //            answer++;
-    //            continue;
-    //        }
-    //    }
-
-    //    answer = 0;
-    //    position = StartPos;
-    //}
-
-
+    if (answer == maps.size() * maps[0].size())
+        answer = -1;
     return answer;
 }
 
 int main()
 {
-    solution({ {1,0,1,1,1}, {1,0,1,0,1},{1,0,1,1,1}, {1,1,1,0,1}, {0,0,0,0,1} });
+    solution({ {1,0,1,1,1},{1,0,1,0,1}, {1,0,1,1,1}, {1,1,1,0,1}, {0,0,0,0,1} });
+
+    return 0;
 }
