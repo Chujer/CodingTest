@@ -123,5 +123,20 @@
     <ClCompile Include="세탁소 사장 동혁.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="중앙 이동 알고리즘.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="함수\벌집.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="함수\분수.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="함수\달패이는 올라가고 싶다.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="큰 수 A+B.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
