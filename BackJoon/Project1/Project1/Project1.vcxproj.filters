@@ -147,5 +147,14 @@
     <ClCompile Include="세로읽기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="약수들의 합.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="소수찾기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="소수.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
