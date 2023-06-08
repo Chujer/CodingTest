@@ -168,5 +168,11 @@
     <ClCompile Include="숨바꼭질3.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="직사각형에서 탈출.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="네 번째 점.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
