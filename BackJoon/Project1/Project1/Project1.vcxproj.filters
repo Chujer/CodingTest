@@ -201,5 +201,11 @@
     <ClCompile Include="요세푸스 문제0.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="알고리즘 수업 - 알고리즘의 수행시간 2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1로 만들기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
