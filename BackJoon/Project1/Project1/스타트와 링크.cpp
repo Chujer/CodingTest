@@ -107,6 +107,4 @@ int main()
 	}
 
 	cout << minAnswer;
-
-	int a = 0;
 }
