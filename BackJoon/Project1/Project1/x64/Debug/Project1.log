@@ -1,4 +1,2 @@
-﻿  znjemxmfl.cpp
-C:\Users\Chujer\Desktop\GitHub\CodingTest\BackJoon\Project1\Project1\23.07월\znjemxmfl.cpp(45,39): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\Chujer\Desktop\GitHub\CodingTest\BackJoon\Project1\Project1\23.07월\znjemxmfl.cpp(46,39): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  Project1.vcxproj -> C:\Users\Chujer\Desktop\GitHub\CodingTest\BackJoon\Project1\x64\Debug\Project1.exe
+﻿  종이의 개수.cpp
+C:\Users\Chujer\Desktop\GitHub\CodingTest\BackJoon\Project1\Project1\23.07월\종이의 개수.cpp(102,4): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.

@@ -291,7 +291,13 @@
     <ClCompile Include="23.07월\문자열 집합.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="23.07월\znjemxmfl.cpp">
+    <ClCompile Include="23.07월\쿼드트리l.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="23.07월\회사에 있는 사람.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="23.07월\종이의 개수.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
