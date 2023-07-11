@@ -288,22 +288,43 @@
     <ClCompile Include="톱니바퀴.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="23.07월\문자열 집합.cpp">
+    <ClCompile Include="23년 07월\문자열 집합.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="23.07월\쿼드트리l.cpp">
+    <ClCompile Include="23년 07월\쿼드트리l.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="23.07월\회사에 있는 사람.cpp">
+    <ClCompile Include="23년 07월\회사에 있는 사람.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="23.07월\종이의 개수.cpp">
+    <ClCompile Include="23년 07월\종이의 개수.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="23.07월\나는야 포켓몬 마스터 이다솜.cpp">
+    <ClCompile Include="23년 07월\나는야 포켓몬 마스터 이다솜.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="23.07월\포도주 시식.cpp">
+    <ClCompile Include="23년 07월\포도주 시식.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="23년 07월\숫자 카드2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="23년 07월\최소비용 구하기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="23년 07월\듣보잡.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="23년 07월\대칭 차집합.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="23년 07월\서로 다른 부분 문자열의 개수.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="23년 07월\최소공배수.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="23년 07월\최소 힙.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
