@@ -1,4 +1,2 @@
-﻿  가로수.cpp
-C:\Users\Chujer\Desktop\GitHub\CodingTest\BackJoon\Project1\Project1\23년 07월\가로수.cpp(46,12): warning C4244: '초기화 중': '__int64'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\Chujer\Desktop\GitHub\CodingTest\BackJoon\Project1\Project1\23년 07월\가로수.cpp(47,25): warning C4267: '-=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+﻿  인간-컴퓨터 상호작용.cpp
   Project1.vcxproj -> C:\Users\Chujer\Desktop\GitHub\CodingTest\BackJoon\Project1\x64\Debug\Project1.exe
