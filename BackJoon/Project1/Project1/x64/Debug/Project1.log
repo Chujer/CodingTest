@@ -1,2 +1,3 @@
-﻿  인간-컴퓨터 상호작용.cpp
-  Project1.vcxproj -> C:\Users\Chujer\Desktop\GitHub\CodingTest\BackJoon\Project1\x64\Debug\Project1.exe
+﻿  소수구하기.cpp
+C:\Users\User\Desktop\GitHub\CodingTest\BackJoon\Project1\Project1\23년 07월\소수구하기.cpp(37,13): warning C4244: '초기화 중': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Project1.vcxproj -> C:\Users\User\Desktop\GitHub\CodingTest\BackJoon\Project1\x64\Debug\Project1.exe
