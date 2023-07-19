@@ -351,5 +351,11 @@
     <ClCompile Include="23년 07월\잃어버린 괄호.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="23년 07월\베라의 패션.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="23년 07월\경쟁적 전염.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
