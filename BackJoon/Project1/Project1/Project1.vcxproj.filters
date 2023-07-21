@@ -357,5 +357,17 @@
     <ClCompile Include="23년 07월\경쟁적 전염.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="23년 07월\다리놓기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="23년 07월\인사성 밝은 곰곰이.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="23년 07월\붙임성 좋은 총총이.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="23년 07월\별 찍기 - 10.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
