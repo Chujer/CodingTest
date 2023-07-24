@@ -369,5 +369,14 @@
     <ClCompile Include="23년 07월\별 찍기 - 10.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="23년 07월\통계학.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="23년 07월\영단어 암기는 괴로워.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="23년 07월\스택.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
