@@ -381,5 +381,17 @@
     <ClCompile Include="23년 07월\동전1.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="23년 07월\제로.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="23년 07월\플로이드.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="23년 07월\괄호.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="23년 07월\인구 이동.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
