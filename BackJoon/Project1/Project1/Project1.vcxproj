@@ -124,6 +124,7 @@
     <ClCompile Include="23년 07월\종이의 개수.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="23년 07월\주유소.cpp" />
     <ClCompile Include="23년 07월\창문 닫기.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
