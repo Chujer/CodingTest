@@ -417,5 +417,11 @@
     <ClCompile Include="23년 8월\덱.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="23년 8월\구간 합 구하기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="23년 8월\최대 페이지 수.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
