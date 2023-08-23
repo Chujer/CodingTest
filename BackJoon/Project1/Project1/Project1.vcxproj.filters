@@ -435,5 +435,8 @@
     <ClCompile Include="23년 8월\체스판 다시 칠하기2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="23년 8월\유기농 배추.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
