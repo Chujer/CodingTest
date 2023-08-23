@@ -216,9 +216,6 @@
     <ClCompile Include="분해합.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="체스판 다시 칠하기.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="영화감독 숌.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -430,6 +427,12 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="23년 8월\나머지 합.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="23년 8월\구간 합 구하기 5.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="23년 8월\체스판 다시 칠하기2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
