@@ -441,5 +441,8 @@
     <ClCompile Include="23년 8월\스타트와 링크.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="23년 8월\단지 번호 붙이기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
