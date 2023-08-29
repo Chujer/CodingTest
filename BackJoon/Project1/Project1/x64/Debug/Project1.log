@@ -1,5 +1,2 @@
-﻿  미로 탐색.cpp
-C:\Users\Chujer\Desktop\GitHub\CodingTest\BackJoon\Project1\Project1\23년 8월\미로 탐색.cpp(49,35): error C2660: 'BFS': 함수는 3개의 인수를 사용하지 않습니다.
-C:\Users\Chujer\Desktop\GitHub\CodingTest\BackJoon\Project1\Project1\23년 8월\미로 탐색.cpp(22,6): message : 'BFS' 선언을 참조하십시오.
-C:\Users\Chujer\Desktop\GitHub\CodingTest\BackJoon\Project1\Project1\23년 8월\미로 탐색.cpp(75,15): error C2660: 'BFS': 함수는 3개의 인수를 사용하지 않습니다.
-C:\Users\Chujer\Desktop\GitHub\CodingTest\BackJoon\Project1\Project1\23년 8월\미로 탐색.cpp(22,6): message : 'BFS' 선언을 참조하십시오.
+﻿  전깃줄.cpp
+  Project1.vcxproj -> C:\Users\Chujer\Desktop\GitHub\CodingTest\BackJoon\Project1\x64\Debug\Project1.exe
