@@ -44,5 +44,6 @@
     <ClCompile Include="스킬트리.cpp" />
     <ClCompile Include="방문길이.cpp" />
     <ClCompile Include="게임 맵 최단거리.cpp" />
+    <ClCompile Include="모음 사전.cpp" />
   </ItemGroup>
 </Project>
