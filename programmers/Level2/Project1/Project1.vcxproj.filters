@@ -46,5 +46,6 @@
     <ClCompile Include="게임 맵 최단거리.cpp" />
     <ClCompile Include="모음 사전.cpp" />
     <ClCompile Include="뒤에 있는 큰 수 찾기.cpp" />
+    <ClCompile Include="파일명 정렬.cpp" />
   </ItemGroup>
 </Project>
