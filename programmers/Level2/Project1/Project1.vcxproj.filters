@@ -49,5 +49,6 @@
     <ClCompile Include="파일명 정렬.cpp" />
     <ClCompile Include="프렌즈4블록.cpp" />
     <ClCompile Include="롤케이크 자르기.cpp" />
+    <ClCompile Include="숫자 변환하기.cpp" />
   </ItemGroup>
 </Project>
