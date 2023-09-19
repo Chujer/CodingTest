@@ -51,5 +51,6 @@
     <ClCompile Include="롤케이크 자르기.cpp" />
     <ClCompile Include="숫자 변환하기.cpp" />
     <ClCompile Include="2 x n 타일링.cpp" />
+    <ClCompile Include="2개 이하로 다른 비트.cpp" />
   </ItemGroup>
 </Project>
