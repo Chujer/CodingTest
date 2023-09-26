@@ -55,5 +55,6 @@
     <ClCompile Include="택배상자.cpp" />
     <ClCompile Include="다리를 지나는 트럭.cpp" />
     <ClCompile Include="쿼드압축 후 개수 세기.cpp" />
+    <ClCompile Include="무인도 여행.cpp" />
   </ItemGroup>
 </Project>
