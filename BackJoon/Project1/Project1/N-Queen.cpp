@@ -4,30 +4,33 @@
 #include <string>
 #include <map>
 #include <math.h>
-#include <stack>
+#include <queue>
 
 using namespace std;
+int aanswer = 0;
 
-void DFS(vector<vector<int>> arr, int x, int y)
+void DFS(vector<int> check, int answer, int index, int count,vector<pair<int,int>> in)
 {
-	int dirLeft[2] = { -1,-1 };
-	int dirRight[2] = { +1,-1 };
-	int i = 0;
-	while (true)
+	if (check[index] != 100)
+		return;
+	count++;
+	check[index] = count;
+	in.push_back({ index, count });
+
+	for (int i = 0; i < in.size()-1; i++)
 	{
-		int checkLeft[2] = { x + (dirLeft[0] * i), y + (dirLeft[1] * i) };
-		int checkRight[2] = {x + (dirRight[0] * i), y + (dirRight[1] * i)};
-
-		if (checkLeft[0] < 0 || checkLeft[1] < 0 || checkRight[1] < 0)
-			return;
-		else if (checkRight[0] >= arr.size())
-			return;
-
-		if (arr[x + checkLeft[0]][y + checkLeft[1]] == -1 || arr[x + checkRight[0]][y + checkRight[1]] == -1)
-			return;
-
-		DFS(arr, x +1, y);
-		i++;
+		if (index != in[i].first)
+		{
+			if (abs(check[index] - in[i].second) == abs(in[i].first - index))
+				return;
+		}
+	}
+	answer++;
+	if (answer == check.size())
+		aanswer++;
+	for (int i = 0; i < check.size(); i++)
+	{
+		DFS(check, answer, i, count,in);
 	}
 }
 
@@ -36,21 +39,62 @@ int main()
 	int N;
 	cin >> N;
 	
-	if (N == 1)
-		cout << 1;
-	else if (N < 4)
-		cout << 0;
+	vector<int> check;
+	vector<pair<int,int>> in;
 
-	vector<vector<int>> arr;
-	for (int i = 0; i < N; i++)
+	check.resize(N, 100);
+	int answer = 0;
+
+	for (int i = 0; i < check.size(); i++)
 	{
-		vector<int> temp;
-		for (int j = 0; j < N; j++)
-		{
-			temp.push_back(0);
-		}
-		arr.push_back(temp);
-		temp.clear();
+		DFS(check, answer, i, 0,in);
 	}
-
+	
+	cout << aanswer;
 }
+
+//#include <stdio.h>
+//#include <stdlib.h>
+//
+//int count = 0;
+//int n;
+//int board[15];
+//
+//// 유망한지 판단하는 함수
+//int promising(int cdx) {
+//
+//	// 같은 열이면 안되고, 대각선상에 있어서도 안 된다.
+//	for (int i = 0; i < cdx; i++) {
+//		if (board[cdx] == board[i] || cdx - i == abs(board[cdx] - board[i])) {
+//			return 0;
+//		}
+//	}
+//	return 1;
+//}
+//
+//// nqueen 알고리즘 수행
+//void nqueen(int cdx) {
+//
+//	// cdx가 마지막 행까지 수행하고 여기까지 오면, 찾기 완료
+//	if (cdx == n) {
+//		count++;
+//		return;
+//	}
+//
+//	for (int i = 0; i < n; i++) {
+//		board[cdx] = i; // cdx번째 행, i번째 열에 queen을 놓아본다.	
+//		// 이후 그 행에 둔 것에 대한 유망성을 판단한다.
+//		if (promising(cdx)) { // 그 자리에 두어도 괜찮았다면,
+//			nqueen(cdx + 1); // 그 다음 행에 대해 퀸을 놓는 것을 해 본다.
+//		}
+//	}
+//}
+//
+//int main() {
+//
+//	
+//	scanf_s("%d", &n);
+//	nqueen(0);
+//	printf("%d", count);
+//
+//}
