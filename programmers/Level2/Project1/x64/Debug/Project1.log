@@ -1,3 +1,2 @@
-﻿  큰 수 만들기.cpp
-D:\GitHub\CodingTest\programmers\Level2\Project1\큰 수 만들기.cpp(13,36): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  Project1.vcxproj -> D:\GitHub\CodingTest\programmers\Level2\x64\Debug\Project1.exe
+﻿  두 큐 합 같게 만들기.cpp
+  Project1.vcxproj -> C:\Users\Chujer\Desktop\GitHub\CodingTest\programmers\Level2\x64\Debug\Project1.exe
