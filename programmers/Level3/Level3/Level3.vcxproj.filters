@@ -3,5 +3,6 @@
   <ItemGroup>
     <ClCompile Include="네트워크.cpp" />
     <ClCompile Include="등굣길.cpp" />
+    <ClCompile Include="셔틀버스.cpp" />
   </ItemGroup>
 </Project>
