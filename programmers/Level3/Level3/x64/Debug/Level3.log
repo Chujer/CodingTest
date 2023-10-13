@@ -1,7 +1,2 @@
-﻿  셔틀버스.cpp
-C:\Users\Chujer\Desktop\GitHub\CodingTest\programmers\Level3\Level3\셔틀버스.cpp(41,37): warning C4805: '==': 연산에 '_Ty2' 형식과 'bool' 형식을 함께 사용하는 것은 안전하지 않습니다.
-          with
-          [
-              _Ty2=int
-          ]
+﻿  표 편집.cpp
   Level3.vcxproj -> C:\Users\Chujer\Desktop\GitHub\CodingTest\programmers\Level3\x64\Debug\Level3.exe
