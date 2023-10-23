@@ -13,43 +13,57 @@ bool cmd(vector<int> a, vector<int> b)
 
 struct Node
 {
-    Node* parent;
-    Node* child = 0;
-    int cost = 0;
-    
-    Node() {}
-    Node(Node* parent, Node* child, int cost) : parent(parent), child(child), cost(cost) {}
+    int index;
 };
+vector<Node> datas;
+
+int find(int index)
+{
+    if (index != datas[index].index)
+        datas[index].index = find(datas[index].index);
+
+    return datas[index].index;
+}
+
+bool merge(int a, int b)
+{
+    int x = find(a);
+    int y = find(b);
+
+    if (x != y)
+    {
+        if (x < y)
+            datas[x].index = y;
+        else
+            datas[y].index = x;
+
+        return true;
+    }
+     return false;
+}
 
 int solution(int n, vector<vector<int>> costs) {
     int answer = 0;
-
-    Node* start;
     
-    //시작지점0 도착지점 1 가중치2
+    //시작지점0 도착지점 1 가중치2 
 
     sort(costs.begin(), costs.end(), cmd);
+    for (int i = 0; i < n; i++)
+    {
+        Node temp;
+        temp.index = i;
+        datas.push_back(temp);
+    }
 
     for (int i = 0; i < costs.size(); i++)
     {
-        Node parent(costs[i][0], costs[i][1], costs[i][2]);
-        bool stop = false;
-        while (brdge[node.parent].cost != 0)
-        {
-            node = brdge[node.parent];
-            if (node.parent == costs[i][1])
-                stop = true;
-        }
-        if(!stop)
-            brdge[costs[i][1]] = node;
+        if (merge(costs[i][0], costs[i][1]))
+            answer += costs[i][2];
     }
-
-    
-
     return answer;
 }
 
 int main()
 {
-    solution(4, { {0,1,1} ,{0,2,2},{1,2,5}, {1,3,1}, {2,3,8} });
+    solution(4, { {1,3,2},{1,2,3}, {2,3,3},{0,3,4},{0,1,3} });
 }

@@ -62,5 +62,7 @@
     <ClCompile Include="큰 수 만들기.cpp" />
     <ClCompile Include="두 큐 합 같게 만들기.cpp" />
     <ClCompile Include="조이스틱.cpp" />
+    <ClCompile Include="연속된 부분 수열의 합.cpp" />
+    <ClCompile Include="124 나라의 숫자.cpp" />
   </ItemGroup>
 </Project>
