@@ -64,5 +64,7 @@
     <ClCompile Include="조이스틱.cpp" />
     <ClCompile Include="연속된 부분 수열의 합.cpp" />
     <ClCompile Include="124 나라의 숫자.cpp" />
+    <ClCompile Include="메뉴 리뉴얼.cpp" />
+    <ClCompile Include="방금그곡.cpp" />
   </ItemGroup>
 </Project>
