@@ -66,5 +66,6 @@
     <ClCompile Include="124 나라의 숫자.cpp" />
     <ClCompile Include="메뉴 리뉴얼.cpp" />
     <ClCompile Include="방금그곡.cpp" />
+    <ClCompile Include="전력망을 둘로 나누기.cpp" />
   </ItemGroup>
 </Project>
