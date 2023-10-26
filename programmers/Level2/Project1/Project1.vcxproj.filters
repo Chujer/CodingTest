@@ -67,5 +67,6 @@
     <ClCompile Include="메뉴 리뉴얼.cpp" />
     <ClCompile Include="방금그곡.cpp" />
     <ClCompile Include="전력망을 둘로 나누기.cpp" />
+    <ClCompile Include="불량사용자.cpp" />
   </ItemGroup>
 </Project>
