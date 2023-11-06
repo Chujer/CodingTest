@@ -68,5 +68,7 @@
     <ClCompile Include="방금그곡.cpp" />
     <ClCompile Include="전력망을 둘로 나누기.cpp" />
     <ClCompile Include="불량사용자.cpp" />
+    <ClCompile Include="호텔 대실.cpp" />
+    <ClCompile Include="괄호변환.cpp" />
   </ItemGroup>
 </Project>
