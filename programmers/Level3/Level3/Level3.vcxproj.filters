@@ -8,5 +8,6 @@
     <ClCompile Include="베스트앨범.cpp" />
     <ClCompile Include="섬 연결하기.cpp" />
     <ClCompile Include="기둥과 보 설치.cpp" />
+    <ClCompile Include="N으로 표현.cpp" />
   </ItemGroup>
 </Project>
