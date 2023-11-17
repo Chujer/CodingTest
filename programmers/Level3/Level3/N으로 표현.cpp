@@ -1,17 +1,18 @@
 #include <string>
 #include <vector>
 
+
 using namespace std;
 
 
 int solution(int N, int number) {
     int answer = 0;
 
-    vector<int> DP(32001, 32000);
+    vector<int> DP(32001, 50000);
 
     DP[0] = 2;
     DP[1] = 2;
-    for (int i = 1; i < 5; i++)
+    for (int i = 1; i <= 5; i++)
     {
         string indexStr = "";
         for (int j = 1; j <= i; j++)
@@ -21,31 +22,56 @@ int solution(int N, int number) {
 
         int index = stoi(indexStr);
 
-        if (index > DP.size())
+        if (index >= DP.size())
             continue;
-        DP[index] = indexStr.size();
+        int temp = indexStr.size();
+        DP[index] = min(DP[index], temp);
+        if (index + index < DP.size())
+        {
+            temp = indexStr.size() * 2;
+            DP[index + index] = min(DP[index + index], temp);
+        }
+
         if (index * index < DP.size())
-             DP[index * index] = indexStr.size() * 2;
+        {
+            temp = indexStr.size() * 2;
+            DP[index * index] = min(DP[index * index], temp);
+        }
     }
 
     for (int i = 2; i < DP.size(); i++)
     {
         for (int j = 1; j <= i; j++)
         {
-            if(i+j < DP.size())
+            if (i + j < DP.size())
                 DP[i + j] = min(DP[i + j], DP[i] + DP[j]);
-            if(i-j >= 0)
+            if (i - j >= 0)
                 DP[i - j] = min(DP[i - j], DP[i] + DP[j]);
-            if(i / j >= 0)
+            if (i / j >= 0)
                 DP[i / j] = min(DP[i / j], DP[i] + DP[j]);
-            if(i*j < DP.size())
+            if (i* j < DP.size())
+                DP[i * j] = min(DP[i * j], DP[i] + DP[j]);
+        }
+    }
+
+    for (int i = DP.size() - 1; i > 0; i--)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            if (i + j < DP.size())
+                DP[i + j] = min(DP[i + j], DP[i] + DP[j]);
+            if (i - j >= 0)
+                DP[i - j] = min(DP[i - j], DP[i] + DP[j]);
+            if (i / j >= 0)
+                DP[i / j] = min(DP[i / j], DP[i] + DP[j]);
+            if (i * j < DP.size())
                 DP[i * j] = min(DP[i * j], DP[i] + DP[j]);
         }
     }
 
     answer = DP[number];
 
-    if (answer == 32000)
+    if (answer > 8)
         answer = -1;
 
     return answer;
@@ -53,5 +79,5 @@ int solution(int N, int number) {
 
 int main()
 {
-    solution(8, 53);
+    solution(1, 37);
 }

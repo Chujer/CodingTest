@@ -1,12 +1,10 @@
 ﻿  N으로 표현.cpp
-D:\GitHub\CodingTest\programmers\Level3\Level3\N으로 표현.cpp(26,36): warning C4267: '=': 'size_t'에서 '_Ty'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\GitHub\CodingTest\programmers\Level3\Level3\N으로 표현.cpp(27,36): warning C4267: '=': 'size_t'에서 '_Ty'(으)로 변환하면서 데이터가 손실될 수 있습니다.
           with
           [
               _Ty=int
           ]
-D:\GitHub\CodingTest\programmers\Level3\Level3\N으로 표현.cpp(28,53): warning C4267: '=': 'size_t'에서 '_Ty'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-          with
-          [
-              _Ty=int
-          ]
+D:\GitHub\CodingTest\programmers\Level3\Level3\N으로 표현.cpp(30,43): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\GitHub\CodingTest\programmers\Level3\Level3\N으로 표현.cpp(36,43): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\GitHub\CodingTest\programmers\Level3\Level3\N으로 표현.cpp(56,5): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   Level3.vcxproj -> D:\GitHub\CodingTest\programmers\Level3\x64\Debug\Level3.exe
