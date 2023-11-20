@@ -1,4 +1,3 @@
-﻿  마법의 엘리베이터.cpp
-C:\Users\Chujer\Desktop\GitHub\CodingTest\programmers\Level2\Project1\마법의 엘리베이터.cpp(11,45): warning C4244: '인수': 'unsigned __int64'에서 'double'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\Chujer\Desktop\GitHub\CodingTest\programmers\Level2\Project1\마법의 엘리베이터.cpp(11,13): warning C4244: '초기화 중': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  Project1.vcxproj -> C:\Users\Chujer\Desktop\GitHub\CodingTest\programmers\Level2\x64\Debug\Project1.exe
+﻿  수식 최대화.cpp
+D:\GitHub\CodingTest\programmers\Level2\Project1\수식 최대화.cpp(14,29): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  Project1.vcxproj -> D:\GitHub\CodingTest\programmers\Level2\x64\Debug\Project1.exe
