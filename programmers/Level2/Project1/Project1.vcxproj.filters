@@ -77,5 +77,6 @@
     <ClCompile Include="배달.cpp" />
     <ClCompile Include="시소 짝궁.cpp" />
     <ClCompile Include="숫자 카드 나누기.cpp" />
+    <ClCompile Include="거리두기 확인하기.cpp" />
   </ItemGroup>
 </Project>
