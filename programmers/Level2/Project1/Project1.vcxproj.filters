@@ -82,5 +82,6 @@
     <ClCompile Include="테이블 해시 함수.cpp" />
     <ClCompile Include="미로 탈출.cpp" />
     <ClCompile Include="멀쩡한 사각형.cpp" />
+    <ClCompile Include="점 찍기.cpp" />
   </ItemGroup>
 </Project>
