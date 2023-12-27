@@ -1,4 +1,2 @@
-﻿  점 찍기.cpp
-C:\Users\Chujer\Desktop\GitHub\CodingTest\programmers\Level2\Project1\점 찍기.cpp(21,24): warning C4244: '인수': '__int64'에서 'double'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\Chujer\Desktop\GitHub\CodingTest\programmers\Level2\Project1\점 찍기.cpp(21,30): warning C4244: '+=': 'double'에서 '__int64'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+﻿  리코쳇 로봇.cpp
   Project1.vcxproj -> C:\Users\Chujer\Desktop\GitHub\CodingTest\programmers\Level2\x64\Debug\Project1.exe
