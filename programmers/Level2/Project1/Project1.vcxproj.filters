@@ -84,5 +84,6 @@
     <ClCompile Include="멀쩡한 사각형.cpp" />
     <ClCompile Include="점 찍기.cpp" />
     <ClCompile Include="리코쳇 로봇.cpp" />
+    <ClCompile Include="하노이의 탑.cpp" />
   </ItemGroup>
 </Project>
