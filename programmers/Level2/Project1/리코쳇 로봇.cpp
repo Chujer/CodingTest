@@ -1,12 +1,17 @@
 #include <string>
 #include <vector>
+#include <queue>
+#include <unordered_set>
 
 using namespace std;
+
 enum Dir {
     LEFT, RIGHT, TOP, DOWN
 };
 
 Dir direction[4] = { LEFT, RIGHT, TOP, DOWN };
+int dx[4] = { -1, 1, 0, 0 };
+int dy[4] = { 0, 0, -1, 1 };
 
 pair<int, int> Move(vector<string>& board, pair<int, int>& curPos, Dir dir)
 {
@@ -16,23 +21,8 @@ pair<int, int> Move(vector<string>& board, pair<int, int>& curPos, Dir dir)
     while (true)
     {
         prePos = { x,y };
-        switch (dir)
-        {
-        case LEFT:
-            x -= 1;
-            break;
-        case RIGHT:
-            x += 1;
-            break;
-        case TOP:
-            y -= 1;
-            break;
-        case DOWN:
-            y += 1;
-            break;
-        default:
-            break;
-        }
+        x += dx[dir];
+        y += dy[dir];
         if (x < 0 || y < 0 || x >= board[0].size() || y >= board.size() || board[y][x] == 'D')
         {
             return prePos;
@@ -40,40 +30,10 @@ pair<int, int> Move(vector<string>& board, pair<int, int>& curPos, Dir dir)
     }
 }
 
-void DFS(vector<string>& board,vector<vector<int>> check, pair<int, int> curPos, int& answer)
-{
-    if (answer != -1)
-    {
-        if (check[curPos.second][curPos.first] > answer)
-            return;
-        if (board[curPos.second][curPos.first] == 'G')
-            answer = min(answer, check[curPos.second][curPos.first] - 1); 
-    }
-    else
-        if (board[curPos.second][curPos.first] == 'G')
-        {
-            answer = check[curPos.second][curPos.first] - 1;
-            return;
-        }
-
-
-
-    for (int i = 0; i < 4; i++)
-    {
-        pair<int,int> temp = Move(board, curPos, direction[i]);
-        if (temp == curPos)
-            continue;
-        if (check[temp.second][temp.first] != 0)
-            continue;
-        check[temp.second][temp.first] = check[curPos.second][curPos.first] + 1;
-        DFS(board, check, temp, answer);
-    }
-}
-
 int solution(vector<string> board) {
     int answer = -1;
-
-    vector<vector<int>> check(board.size(), vector<int>(board[0].size(), 0));
+    queue<pair<pair<int, int>, int>> q; // ((x, y), time)
+    unordered_set<int> visited;
 
     for (int i = 0; i < board.size(); i++)
     {
@@ -81,13 +41,35 @@ int solution(vector<string> board) {
         {
             if (board[i][j] == 'R')
             {
-                check[i][j] = 1;
-                DFS(board, check, {j,i}, answer);
+                q.push({ {j, i}, 0 });
+                visited.insert(i * board[0].size() + j);
+                break;
             }
         }
     }
 
-    
+    while (!q.empty())
+    {
+        auto cur = q.front();
+        q.pop();
+
+        if (board[cur.first.second][cur.first.first] == 'G')
+        {
+            answer = cur.second;
+            break;
+        }
+
+        for (int i = 0; i < 4; i++)
+        {
+            pair<int, int> temp = Move(board, cur.first, direction[i]);
+            if (temp == cur.first)
+                continue;
+            if (visited.count(temp.second * board[0].size() + temp.first))
+                continue;
+            visited.insert(temp.second * board[0].size() + temp.first);
+            q.push({ temp, cur.second + 1 });
+        }
+    }
 
     return answer;
 }
