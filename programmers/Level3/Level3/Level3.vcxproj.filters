@@ -11,5 +11,6 @@
     <ClCompile Include="N으로 표현.cpp" />
     <ClCompile Include="정수 삼각형.cpp" />
     <ClCompile Include="이중우선순위큐.cpp" />
+    <ClCompile Include="야근 지수.cpp" />
   </ItemGroup>
 </Project>
