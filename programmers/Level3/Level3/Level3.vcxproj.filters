@@ -13,5 +13,6 @@
     <ClCompile Include="이중우선순위큐.cpp" />
     <ClCompile Include="야근 지수.cpp" />
     <ClCompile Include="단어변환.cpp" />
+    <ClCompile Include="최고의 집합.cpp" />
   </ItemGroup>
 </Project>
