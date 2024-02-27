@@ -86,5 +86,6 @@
     <ClCompile Include="리코쳇 로봇.cpp" />
     <ClCompile Include="하노이의 탑.cpp" />
     <ClCompile Include="문자열 압축.cpp" />
+    <ClCompile Include="디펜스 게임.cpp" />
   </ItemGroup>
 </Project>
