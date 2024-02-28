@@ -15,5 +15,6 @@
     <ClCompile Include="단어변환.cpp" />
     <ClCompile Include="최고의 집합.cpp" />
     <ClCompile Include="숫자 게임.cpp" />
+    <ClCompile Include="단속카메라.cpp" />
   </ItemGroup>
 </Project>
