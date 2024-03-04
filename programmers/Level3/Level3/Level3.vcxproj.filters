@@ -17,5 +17,6 @@
     <ClCompile Include="숫자 게임.cpp" />
     <ClCompile Include="단속카메라.cpp" />
     <ClCompile Include="기지국 설치.cpp" />
+    <ClCompile Include="스티커 모으기.cpp" />
   </ItemGroup>
 </Project>
