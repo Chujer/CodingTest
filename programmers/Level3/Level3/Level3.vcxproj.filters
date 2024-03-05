@@ -18,5 +18,6 @@
     <ClCompile Include="단속카메라.cpp" />
     <ClCompile Include="기지국 설치.cpp" />
     <ClCompile Include="스티커 모으기.cpp" />
+    <ClCompile Include="보석 쇼핑.cpp" />
   </ItemGroup>
 </Project>
