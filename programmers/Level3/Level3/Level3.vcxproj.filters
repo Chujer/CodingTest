@@ -21,5 +21,6 @@
     <ClCompile Include="보석 쇼핑.cpp" />
     <ClCompile Include="징검다리 건너기.cpp" />
     <ClCompile Include="가장 먼 노드.cpp" />
+    <ClCompile Include="여행경로.cpp" />
   </ItemGroup>
 </Project>
