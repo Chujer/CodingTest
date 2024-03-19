@@ -24,5 +24,6 @@
     <ClCompile Include="여행경로.cpp" />
     <ClCompile Include="디스크 컨트롤러.cpp" />
     <ClCompile Include="입국심사.cpp" />
+    <ClCompile Include="경주로 건설.cpp" />
   </ItemGroup>
 </Project>
