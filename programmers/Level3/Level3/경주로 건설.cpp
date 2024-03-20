@@ -1,5 +1,6 @@
 #include <string>
 #include <vector>
+#include <map>
 #include <algorithm>
 
 using namespace std;
@@ -11,71 +12,73 @@ enum DIR
 int dirX[4] = { -1,0,1,0 };
 int dirY[4] = { 0,-1,0,1 };
 
-void Update(vector<vector<pair<int, vector<DIR>>>>& DP, vector<vector<int>>& board, vector<int> pos,vector<DIR> dir)
+
+void Update(vector<vector<map<DIR, int>>>& DP, vector<vector<int>> board, pair<int,int> pos)
 {
-    for (int r = 0; r < 4; r++)
+    for (pair<DIR, int> d : DP[pos.second][pos.first])
     {
-        int plusCost = 100;
-        int x = pos[0] + dirX[r];
-        int y = pos[1] + dirY[r];
-
-        if (y < 0 || y >= board.size() || x < 0 || x >= board.size())
-            continue;
-
-        if (x == 4 && y == 3)
-            int a = 0;
-        if (board[y][x] == 1)
-            continue;
-
-
-        if (find(DP[pos[1]][pos[0]].second.begin(), DP[pos[1]][pos[0]].second.end(), r) == DP[pos[1]][pos[0]].second.end())
+        int cost = 100;
+        for (int r = 0; r < 4; r++)
         {
-            plusCost = 600;
-        }
+            int x = pos.first + dirX[r];
+            int y = pos.second + dirY[r];
+            if (x == 4 && y == 4)
+                int a = 0;
+            if (x < 0 || x >= board.size() || y < 0 || y >= board.size() || board[y][x] == 1)
+                continue;
 
-        if (DP[y][x].first > DP[pos[1]][pos[0]].first + plusCost)
-        {
-            DP[y][x].first = DP[pos[1]][pos[0]].first + plusCost;
-            DP[y][x].second.clear();
-            DP[y][x].second.push_back((DIR)(r));
-            Update(DP, board, { x,y }, DP[y][x].second);
-        }
-        else if (DP[y][x].first == DP[pos[1]][pos[0]].first + plusCost)
-        {
-            DP[y][x].first = DP[pos[1]][pos[0]].first + plusCost;
-            DP[y][x].second.push_back((DIR)(r));
+
+            if (d.first != r)
+                cost = 600;
+            else
+                cost = 100;
+
+            if (DP[y][x][(DIR)r] == 0)
+            {
+                DP[y][x][(DIR)r] = d.second + cost;
+                Update(DP, board, { x,y });
+            }
+            else if(DP[y][x][(DIR)r] > d.second + cost)
+            {
+                DP[y][x][(DIR)r] = d.second + cost;
+                Update(DP, board, { x,y });
+            }
         }
     }
-
 }
 
 int solution(vector<vector<int>> board) {
-    int answer = 0;
+    int answer = 400000;
 
-    vector<vector<pair<int, vector<DIR>>>> DP(board.size(), vector<pair<int, vector<DIR>>>(board.size(), { 500000, {RIGHT} }));
-
-    DP[0][0] = { 0, {RIGHT} };
-    DP[0][1] = { 100, {RIGHT} };
-    DP[1][0] = { 100, {BOTTOM }};
+    vector<vector<map<DIR, int>>> DP(board.size(), vector<map<DIR, int>>(board.size()));
+    DIR dir;
+    DP[0][0][RIGHT] = 0;
+    DP[1][0][BOTTOM] = 100;
+    DP[0][1][RIGHT] = 100;
 
     for (int i = 0; i < board.size(); i++)
     {
         for (int j = 0; j < board.size(); j++)
         {
+            if (i == 0 && j == 0)
+                continue;
+
             if (board[i][j] == 1)
                 continue;
 
-            Update(DP, board, { j,i }, DP[i][j].second);
+            Update(DP, board, { j,i });
         }
     }
 
-
-    answer = DP[board.size() - 1][board.size() - 1].first;
+    for (pair<DIR, int> d : DP[DP.size() - 1][DP.size() - 1])
+    {
+        answer = min(answer, d.second);
+    }
 
     return answer;
 }
 
 int main()
 {
-    solution({ {0, 0, 0, 0, 0} ,{0, 1, 1, 1, 0},{0, 0, 1, 0, 0},{1, 0, 0, 0, 1},{0, 1, 1, 0, 0} });
+    solution({ {0, 0, 0, 0, 0, 0, 0, 1} ,{0, 0, 0, 0, 0, 0, 0, 0},{0, 0, 0, 0, 0, 1, 0, 0},{0, 0, 0, 0, 1, 0, 0, 0},{0, 0, 0, 1, 0, 0, 0, 1},{0, 0, 1, 0, 0, 0, 1, 0},{0, 1, 0, 0, 0, 1, 0, 0},{1, 0, 0, 0, 0, 0, 0, 0} });
 }
