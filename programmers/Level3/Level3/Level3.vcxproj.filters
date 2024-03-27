@@ -29,5 +29,6 @@
     <ClCompile Include="연속 펄스 부분 수열의 합.cpp" />
     <ClCompile Include="합승 택시 요금.cpp" />
     <ClCompile Include="다단계 칫솔 판매.cpp" />
+    <ClCompile Include="부대복귀.cpp" />
   </ItemGroup>
 </Project>
