@@ -30,5 +30,6 @@
     <ClCompile Include="합승 택시 요금.cpp" />
     <ClCompile Include="다단계 칫솔 판매.cpp" />
     <ClCompile Include="부대복귀.cpp" />
+    <ClCompile Include="풍선 터트리기.cpp" />
   </ItemGroup>
 </Project>
