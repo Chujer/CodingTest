@@ -31,5 +31,6 @@
     <ClCompile Include="다단계 칫솔 판매.cpp" />
     <ClCompile Include="부대복귀.cpp" />
     <ClCompile Include="풍선 터트리기.cpp" />
+    <ClCompile Include="자물쇠와 열쇠.cpp" />
   </ItemGroup>
 </Project>
