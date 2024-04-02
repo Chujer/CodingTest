@@ -1,3 +1,13 @@
-﻿  자물쇠와 열쇠.cpp
-C:\Users\Chujer\Desktop\GitHub\CodingTest\programmers\Level3\Level3\자물쇠와 열쇠.cpp(11,30): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+﻿  우박수열 정적분.cpp
+C:\Users\Chujer\Desktop\GitHub\CodingTest\programmers\Level3\Level3\우박수열 정적분.cpp(16,33): warning C4244: '=': '_Ty1'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              _Ty1=__int64
+          ]
+C:\Users\Chujer\Desktop\GitHub\CodingTest\programmers\Level3\Level3\우박수열 정적분.cpp(18,37): warning C4244: '=': '_Ty1'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              _Ty1=__int64
+          ]
+C:\Users\Chujer\Desktop\GitHub\CodingTest\programmers\Level3\Level3\우박수열 정적분.cpp(25,25): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   Level3.vcxproj -> C:\Users\Chujer\Desktop\GitHub\CodingTest\programmers\Level3\x64\Debug\Level3.exe
