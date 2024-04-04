@@ -33,5 +33,6 @@
     <ClCompile Include="풍선 터트리기.cpp" />
     <ClCompile Include="자물쇠와 열쇠.cpp" />
     <ClCompile Include="우박수열 정적분.cpp" />
+    <ClCompile Include="순위.cpp" />
   </ItemGroup>
 </Project>
