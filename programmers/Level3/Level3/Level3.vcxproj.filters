@@ -34,5 +34,6 @@
     <ClCompile Include="자물쇠와 열쇠.cpp" />
     <ClCompile Include="우박수열 정적분.cpp" />
     <ClCompile Include="순위.cpp" />
+    <ClCompile Include="거스름돈.cpp" />
   </ItemGroup>
 </Project>
