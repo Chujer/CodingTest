@@ -65,5 +65,6 @@
     <ClCompile Include="가장 가까운 같은 글자.cpp" />
     <ClCompile Include="크기가 작은 부분문자열.cpp" />
     <ClCompile Include="추억 점수.cpp" />
+    <ClCompile Include="카드 뭉치.cpp" />
   </ItemGroup>
 </Project>
