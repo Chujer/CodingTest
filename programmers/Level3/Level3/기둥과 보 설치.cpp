@@ -5,153 +5,111 @@
 
 using namespace std;
 
-bool cmp(vector<int> a, vector<int> b)
+bool cmp(const vector<int>& a, const vector<int>& b) 
 {
-    if (a[0] < b[0])
+    if (a[0] < b[0]) 
         return true;
-    if (a[0] == b[0])
-        return b[1] > a[1];
+    if (a[0] == b[0] && a[1] < b[1]) 
+        return true;
+    if (a[0] == b[0] && a[1] == b[1]) 
+        return a[2] < b[2];
 
     return false;
 }
-vector<vector<int>> pillar;
-vector<vector<int>> roof;
 
-bool Search(int type, int x, int y)
+bool canExist(vector<vector<int>>& pillar, vector<vector<int>>& roof, int x, int y, int type) 
 {
-    if (type == 0) // 기둥
+    if (type == 0) 
+    { // 기둥
+        if (y == 0) 
+            return true; // 바닥 위
+        if (y > 0 && pillar[y - 1][x] == 1) 
+            return true; // 다른 기둥 위
+        if (roof[y][x] == 1) 
+            return true; // 보의 한쪽 끝 부분 위
+        if (x > 0 && roof[y][x - 1] == 1) 
+            return true; // 보의 다른 한쪽 끝 부분 위
+    }
+    else if (type == 1) 
+    { // 보
+        if (pillar[y - 1][x] == 1 || pillar[y - 1][x + 1] == 1) 
+            return true; // 한쪽 끝 부분이 기둥 위
+        if (x > 0 && x < pillar[0].size() - 1 && roof[y][x - 1] == 1 && roof[y][x + 1] == 1) 
+            return true; // 양쪽 끝 부분이 다른 보와 동시에 연결
+    }
+    return false;
+}
+
+bool canRemove(vector<vector<int>>& pillar, vector<vector<int>>& roof, int n) 
+{
+    for (int x = 0; x <= n; x++) 
     {
-        if (y == 0)
-            return true;
-        else
+        for (int y = 0; y <= n; y++) 
         {
-            if (pillar[y - 1][x] == 1 || roof[y][x - 1] == 1 || roof[y][x + 1] == 1)
-                return true;
-            else 
-                return false;
+            if (pillar[y][x] == 1 && !canExist(pillar, roof, x, y, 0)) 
+                return false; // 기둥 삭제 가능한지
+            if (roof[y][x] == 1 && !canExist(pillar, roof, x, y, 1)) 
+                return false; // 보 삭제 가능한지
         }
     }
-    else
-    {
-        if (pillar[y - 1][x] == 1 || pillar[y - 1][x + 1] == 1)
-            return true;
-        else if (roof[y][x - 1] == 1 && roof[y][x + 1] == 1)
-            return true;
-        else
-            return false;
-    }
+    return true;
 }
 
-bool removeSearch(int type, int x, int y)
+vector<vector<int>> solution(int n, vector<vector<int>> build_frame) 
 {
-    if (type == 0)  ///기둥
-    {
-        if (pillar[y + 1][x] == 1 && roof[y + 1][x - 1] == 0 && roof[y + 1][x + 1] == 0)
-            return false;
-        if (roof[y + 1][x] == 1 && pillar[y][x + 1] == 0 && (roof[y + 1][x - 1] == 0 || roof[y + 1][x + 1] == 0))
-            return false;
-        if (roof[y + 1][x - 1] == 1 && pillar[y][x - 1] == 0 &&  (roof[y + 1][x - 2] == 0 || roof[y + 1][x] == 0))
-            return false;
-        
-        return true;
-    }
-    else
-    {
-        //보 왼쪽에 보가 있는경우 && ( 왼쪽 보에 좌측밑에 기둥이 연결 되어 있지 않고 왼쪽 보 우측밑에 기둥이없으면)
-        if (x > 0 && roof[y][x - 1] == 1 && (pillar[y - 1][x - 1] == 0 && pillar[y - 1][x] == 0))
-            return false;
-        //보 오른쪽에 보가 있는경우 && 오른쪽 보 왼쪽밑에 기둥이 없고, 우측밑에도 기둥이 없다면
-        if (x < roof[y].size() && roof[y][x + 1] == 1 && (pillar[y - 1][x + 1] == 0 && pillar[y - 1][x + 2] == 0))
-            return false;
-        //보 좌측위에 기둥이 있는 경우 && 기둥 좌측 밑에 보가 없고, 밑에 기둥이 없다면
-        if (pillar[y][x] == 1 && roof[y][x - 1] == 0 && pillar[y - 1][x] == 0)
-            return false;
-        //보 우측위에 기둥이 있는 경우 && 기둥 우측 밑에 보가 없고, 밑에 기둥이 없다면
-        if (pillar[y][x + 1] == 1 && roof[y][x + 1] == 0 && pillar[y - 1][x + 1] == 0)
-            return false;
-        
-        return true;
-    }
-}
-
-vector<vector<int>> solution(int n, vector<vector<int>> build_frame) {
     vector<vector<int>> answer;
+    vector<vector<int>> pillar(n + 1, vector<int>(n + 1, 0)), roof(n + 1, vector<int>(n + 1, 0));
 
-    pillar.resize(n + 1, vector<int>(n + 1));
-    roof.resize(n + 1, vector<int>(n + 1));
-
-
-    for (int i = 0; i < build_frame.size(); i++)
+    for (auto& frame : build_frame) 
     {
-        int x = build_frame[i][0];
-        int y = build_frame[i][1];
-        bool isRoof = build_frame[i][2];
-        bool isDelete = !build_frame[i][3];
+        int x = frame[0], y = frame[1], type = frame[2], action = frame[3];
 
-        if (isDelete)
-        {
-            if (isRoof)
+        if (action == 1) 
+        { // 설치
+            if (canExist(pillar, roof, x, y, type)) 
             {
-                if (removeSearch(isRoof, x, y))
-                {
-
-                    roof[y][x] = 0;
-                }
-            }
-            else
-            {
-                if (removeSearch(isRoof, x, y))
-                     pillar[y][x] = 0;
-            }
-        }
-        else
-        {
-            if (isRoof)
-            {
-                if (Search(isRoof, x, y))
-                {
-                    roof[y][x] = 1;
-                }
-            }
-            else
-            {
-                if (Search(isRoof, x, y))
-                {
+                if (type == 0) 
                     pillar[y][x] = 1;
-                }
+                else 
+                    roof[y][x] = 1;
+            }
+        }
+        else 
+        { // 삭제
+            if (type == 0) 
+                pillar[y][x] = 0;
+            else 
+                roof[y][x] = 0;
+
+            if (!canRemove(pillar, roof, n)) 
+            {
+                if (type == 0) 
+                    pillar[y][x] = 1;
+                else 
+                    roof[y][x] = 1;
             }
         }
     }
 
-    int x = 0;
-    int y = 0;
-    for (int j = 0; j < pillar[0].size(); j++)
+    for (int x = 0; x <= n; x++) 
     {
-        if (pillar[0][j] == 1)
+        for (int y = 0; y <= n; y++) 
         {
-            x = j;
-            break;
+            if (pillar[y][x] == 1) 
+                answer.push_back({ x, y, 0 });
+            if (roof[y][x] == 1) 
+                answer.push_back({ x, y, 1 });
         }
     }
 
-    for (int i = 0; i <= n; i++)
-    {
-        for (int j = 0; j <= n; j++)
-        {
-            if (pillar[i][j] == 1)
-                answer.push_back({ j,i,0 });
-            if (roof[i][j] == 1)
-                answer.push_back({ j,i,1 });
-        }
-    }
     sort(answer.begin(), answer.end(), cmp);
-
     return answer;
 }
+
 
 int main()
 {
      //solution(5, { {1,0,0,1} ,{1,1,1,1},{2,1,0,1},{2,2,1,1},{5,0,0,1},{5,1,0,1},{4,2,1,1},{3,2,1,1} } );
-    solution(5, { {0,0,0,1} ,{2,0,0,1},{4,0,0,1},{0,1,1,1},{1,1,1,1},{2,1,1,1},{3,1,1,1},{2,0,0,0},{1,1,1,0},{2,2,0,1} } );
-    //solution(3, { {0,0,0,1}, {0,1,1,1}, {3,0,0,1} , {2,1,1,1}, {1,1,1,1}, {1,1,1,0} });
+    //solution(5, { {0,0,0,1} ,{2,0,0,1},{4,0,0,1},{0,1,1,1},{1,1,1,1},{2,1,1,1},{3,1,1,1},{2,0,0,0},{1,1,1,0},{2,2,0,1} } );
+    solution(5, { {3,0,0,1}, {2,1,1,1},{0,0,0,1}, {0,1,1,1},{1,1,1,1},{2,1,0,1},{2,2,1,1} });
 }
