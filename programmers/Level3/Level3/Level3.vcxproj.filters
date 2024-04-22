@@ -38,5 +38,6 @@
     <ClCompile Include="파괴되지 않은 건물.cpp" />
     <ClCompile Include="길 찾기 게임.cpp" />
     <ClCompile Include="양과 늑대.cpp" />
+    <ClCompile Include="보행자 천국.cpp" />
   </ItemGroup>
 </Project>
