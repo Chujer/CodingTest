@@ -88,5 +88,6 @@
     <ClCompile Include="문자열 압축.cpp" />
     <ClCompile Include="디펜스 게임.cpp" />
     <ClCompile Include="광물 캐기.cpp" />
+    <ClCompile Include="혼자 놀기의 달인.cpp" />
   </ItemGroup>
 </Project>
