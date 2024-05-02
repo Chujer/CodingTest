@@ -89,5 +89,7 @@
     <ClCompile Include="디펜스 게임.cpp" />
     <ClCompile Include="광물 캐기.cpp" />
     <ClCompile Include="혼자 놀기의 달인.cpp" />
+    <ClCompile Include="최대값과 최솟값.cpp" />
+    <ClCompile Include="과제 진행하기.cpp" />
   </ItemGroup>
 </Project>
