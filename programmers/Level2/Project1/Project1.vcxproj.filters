@@ -92,5 +92,6 @@
     <ClCompile Include="최대값과 최솟값.cpp" />
     <ClCompile Include="과제 진행하기.cpp" />
     <ClCompile Include="두 원 사이의 정수 쌍.cpp" />
+    <ClCompile Include="이모티콘 할인행사.cpp" />
   </ItemGroup>
 </Project>
