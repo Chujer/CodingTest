@@ -1,7 +1,8 @@
-<<<<<<< HEAD
-﻿  혼자서 하는 틱택토.cpp
+﻿  숫자 블록.cpp
+C:\Users\Chujer\Desktop\GitHub\CodingTest\programmers\Level2\Project1\숫자 블록.cpp(19,41): warning C4244: '인수': '__int64'에서 'double'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Chujer\Desktop\GitHub\CodingTest\programmers\Level2\Project1\숫자 블록.cpp(30,26): warning C4244: '인수': '__int64'에서 '_Ty'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              _Ty=int
+          ]
   Project1.vcxproj -> C:\Users\Chujer\Desktop\GitHub\CodingTest\programmers\Level2\x64\Debug\Project1.exe
-=======
-﻿  temp.cpp
-  Project1.vcxproj -> D:\GitHub\CodingTest\programmers\Level2\x64\Debug\Project1.exe
->>>>>>> d541603840548c49ad5886d55266ef26e3f7fe72
