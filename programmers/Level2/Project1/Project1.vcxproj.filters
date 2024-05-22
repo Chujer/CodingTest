@@ -94,6 +94,10 @@
     <ClCompile Include="두 원 사이의 정수 쌍.cpp" />
     <ClCompile Include="이모티콘 할인행사.cpp" />
     <ClCompile Include="N-Queen.cpp" />
+<<<<<<< HEAD
     <ClCompile Include="혼자서 하는 틱택토.cpp" />
+=======
+    <ClCompile Include="temp.cpp" />
+>>>>>>> d541603840548c49ad5886d55266ef26e3f7fe72
   </ItemGroup>
 </Project>
