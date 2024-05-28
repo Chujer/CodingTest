@@ -98,5 +98,6 @@
     <ClCompile Include="혼자서 하는 틱택토.cpp" />
     <ClCompile Include="숫자 블록.cpp" />
     <ClCompile Include="요격 시스템.cpp" />
+    <ClCompile Include="양궁대회.cpp" />
   </ItemGroup>
 </Project>
