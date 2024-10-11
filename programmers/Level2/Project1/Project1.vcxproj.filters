@@ -101,5 +101,7 @@
     <ClCompile Include="양궁대회.cpp" />
     <ClCompile Include="순위 검색.cpp" />
     <ClCompile Include="택배 배달과 수거하기.cpp" />
+    <ClCompile Include="석유 시추.cpp" />
+    <ClCompile Include="다리를 지나는 트럭2.cpp" />
   </ItemGroup>
 </Project>

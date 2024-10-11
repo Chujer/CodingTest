@@ -28,9 +28,6 @@ int solution(int bridge_length, int weight, vector<int> truck_weights) {
             weight -= truck.front();
             truck.pop();
         }
-        else
-        {
-        }
 
         if (bridge.back() != 0)
             weight += bridge.back();

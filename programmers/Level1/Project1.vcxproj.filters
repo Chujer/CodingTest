@@ -66,5 +66,7 @@
     <ClCompile Include="크기가 작은 부분문자열.cpp" />
     <ClCompile Include="추억 점수.cpp" />
     <ClCompile Include="카드 뭉치.cpp" />
+    <ClCompile Include="포켓몬.cpp" />
+    <ClCompile Include="완주하지 못한 선수.cpp" />
   </ItemGroup>
 </Project>

@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Chujer\\Desktop\\GitHub\\CodingTest\\programmers\\Level1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CA66D2D0-DB97-4608-9407-7391FD428695}|Project1.vcxproj|C:\\Users\\Chujer\\Desktop\\GitHub\\CodingTest\\programmers\\Level1\\\uC644\uC8FC\uD558\uC9C0 \uBABB\uD55C \uC120\uC218.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CA66D2D0-DB97-4608-9407-7391FD428695}|Project1.vcxproj|solutionrelative:\uC644\uC8FC\uD558\uC9C0 \uBABB\uD55C \uC120\uC218.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA66D2D0-DB97-4608-9407-7391FD428695}|Project1.vcxproj|C:\\Users\\Chujer\\Desktop\\GitHub\\CodingTest\\programmers\\Level1\\\uD3EC\uCF13\uBAAC.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CA66D2D0-DB97-4608-9407-7391FD428695}|Project1.vcxproj|solutionrelative:\uD3EC\uCF13\uBAAC.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA66D2D0-DB97-4608-9407-7391FD428695}|Project1.vcxproj|C:\\Users\\Chujer\\Desktop\\GitHub\\CodingTest\\programmers\\Level1\\\uCE74\uB4DC \uBB49\uCE58.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CA66D2D0-DB97-4608-9407-7391FD428695}|Project1.vcxproj|solutionrelative:\uCE74\uB4DC \uBB49\uCE58.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA66D2D0-DB97-4608-9407-7391FD428695}|Project1.vcxproj|C:\\Users\\Chujer\\Desktop\\GitHub\\CodingTest\\programmers\\Level1\\\uCD94\uC5B5 \uC810\uC218.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CA66D2D0-DB97-4608-9407-7391FD428695}|Project1.vcxproj|solutionrelative:\uCD94\uC5B5 \uC810\uC218.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "\uC644\uC8FC\uD558\uC9C0 \uBABB\uD55C \uC120\uC218.cpp",
+              "DocumentMoniker": "C:\\Users\\Chujer\\Desktop\\GitHub\\CodingTest\\programmers\\Level1\\\uC644\uC8FC\uD558\uC9C0 \uBABB\uD55C \uC120\uC218.cpp",
+              "RelativeDocumentMoniker": "\uC644\uC8FC\uD558\uC9C0 \uBABB\uD55C \uC120\uC218.cpp",
+              "ToolTip": "C:\\Users\\Chujer\\Desktop\\GitHub\\CodingTest\\programmers\\Level1\\\uC644\uC8FC\uD558\uC9C0 \uBABB\uD55C \uC120\uC218.cpp",
+              "RelativeToolTip": "\uC644\uC8FC\uD558\uC9C0 \uBABB\uD55C \uC120\uC218.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-11T03:48:22.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "\uD3EC\uCF13\uBAAC.cpp",
+              "DocumentMoniker": "C:\\Users\\Chujer\\Desktop\\GitHub\\CodingTest\\programmers\\Level1\\\uD3EC\uCF13\uBAAC.cpp",
+              "RelativeDocumentMoniker": "\uD3EC\uCF13\uBAAC.cpp",
+              "ToolTip": "C:\\Users\\Chujer\\Desktop\\GitHub\\CodingTest\\programmers\\Level1\\\uD3EC\uCF13\uBAAC.cpp",
+              "RelativeToolTip": "\uD3EC\uCF13\uBAAC.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-11T03:42:02.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "\uCE74\uB4DC \uBB49\uCE58.cpp",
+              "DocumentMoniker": "C:\\Users\\Chujer\\Desktop\\GitHub\\CodingTest\\programmers\\Level1\\\uCE74\uB4DC \uBB49\uCE58.cpp",
+              "RelativeDocumentMoniker": "\uCE74\uB4DC \uBB49\uCE58.cpp",
+              "ToolTip": "C:\\Users\\Chujer\\Desktop\\GitHub\\CodingTest\\programmers\\Level1\\\uCE74\uB4DC \uBB49\uCE58.cpp",
+              "RelativeToolTip": "\uCE74\uB4DC \uBB49\uCE58.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-11T03:41:21.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "\uCD94\uC5B5 \uC810\uC218.cpp",
+              "DocumentMoniker": "C:\\Users\\Chujer\\Desktop\\GitHub\\CodingTest\\programmers\\Level1\\\uCD94\uC5B5 \uC810\uC218.cpp",
+              "RelativeDocumentMoniker": "\uCD94\uC5B5 \uC810\uC218.cpp",
+              "ToolTip": "C:\\Users\\Chujer\\Desktop\\GitHub\\CodingTest\\programmers\\Level1\\\uCD94\uC5B5 \uC810\uC218.cpp",
+              "RelativeToolTip": "\uCD94\uC5B5 \uC810\uC218.cpp",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-11T03:41:21.214Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

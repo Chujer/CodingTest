@@ -1,0 +1,2 @@
+﻿  완주하지 못한 선수.cpp
+C:\Users\Chujer\Desktop\GitHub\CodingTest\programmers\Level1\완주하지 못한 선수.cpp(21,19): error C2676: 이항 '++': 'std::string'이(가) 이 연산자를 정의하지 않거나 미리 정의된 연산자에 허용되는 형식으로의 변환을 정의하지 않습니다.
